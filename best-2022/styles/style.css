@@ -1,0 +1,127 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --background-color: #121212;
+  --elevated-background-color: #1F1F1F ;
+  --text-color: #F1F1F1;
+  --accent1-color: #FCE44D;
+  --accent2-color: #F3A83C;
+
+  --heading-font: "Exo 2", Arial, Helvetica, sans-serif;
+  --paragraph-font: "Exo 2", Arial, Helvetica, sans-serif;
+
+  /* colors */
+  --headline-dark: var(--text-color);
+  --heading-1-dark: var(--accent2-color);
+  --heading-2-dark: var(--accent1-color);
+
+  --p-dark: var(--text-color);
+
+  --nav-bg: var(--elevated-background-color);
+  --nav-bg-hover: var(--background-color);
+  --nav-link: var(--text-color);
+  --nav-link-hover: var(--accent1-color);
+}
+
+
+body {
+  margin: 0 auto;
+}
+
+.feature {
+    margin: 10px;
+    padding: 0px 10px;
+    color: var(--text-color);
+    border: 1px solid var(--accent1-color);
+    background-color: var(--elevated-background-color);
+}
+
+.feature_img_odd {
+  float: right;
+  padding: 10px 0 10px 10px;
+}
+
+.feature_img_even {
+  float: left;
+  padding: 10px 10px 10px 0px;
+}
+
+footer {
+  background-color: var(--elevated-background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+h1, h4, h5, h6, p {
+    color: var(--headline-dark);
+}
+
+h2 {
+    color: var(--heading-1-dark);
+}
+h3 {
+    color: var(--heading-2-dark);
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent2-color);
+}
+header {
+  text-align: center;
+  color: var(--text-color);
+  border: 1px solid var(--accent1-color);
+  background-color: var(--elevated-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+html {
+    background-color: var(--background-color);
+}
+
+.logo {
+    padding-top: 10px;
+    width: 120px;
+}
+
+#logo_link {
+    align-self: center;
+    justify-self: center;
+    padding-top: 5px;
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--text-color);
+  padding: 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: left;
+}
+nav a {
+  min-width: 120px;
+  text-decoration: none;
+  line-height: 6;
+  vertical-align: middle;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link);
+}
+nav a:hover {
+  color: var(--nav-link-hover);
+  background-color: var(--nav-bg-hover);
+}
+
+span.clear {
+  clear: both;
+  display: block;
+}
