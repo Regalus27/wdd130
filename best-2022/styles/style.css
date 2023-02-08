@@ -24,7 +24,7 @@ Fonts are separated by a | */
   --nav-bg: var(--elevated-background-color);
   --nav-bg-hover: var(--background-color);
   --nav-link: var(--text-color);
-  --nav-link-hover: var(--accent1-color);
+  --nav-link-hover: var(--accent2-color);
 }
 
 
@@ -104,21 +104,21 @@ p {
 }
 
 nav {
-  display: flex;
-  justify-content: left;
+  overflow: hidden;
 }
 nav a {
-  min-width: 120px;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  padding: 38px 16px 14px 16px;
   text-decoration: none;
-  line-height: 6;
-  vertical-align: middle;
+  font-size: 17px;
 }
 nav a:link, nav a:visited {
   color: var(--nav-link);
 }
 nav a:hover {
   color: var(--nav-link-hover);
-  background-color: var(--nav-bg-hover);
 }
 
 span.clear {
